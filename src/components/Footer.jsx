@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUp, Smartphone, Send, ShieldCheck, Heart } from 'lucide-react';
+import logmitraLogo from '../assets/logmitra-logo.png';
 
 export default function Footer({ onDownloadClick }) {
   const scrollToTop = () => {
@@ -19,7 +20,7 @@ export default function Footer({ onDownloadClick }) {
               <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-[#695de3] to-[#fa6008] p-[1.5px] shadow-sm">
                 <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center p-1.5">
                   <img
-                    src="/logmitra-logo.png"
+                    src={logmitraLogo}
                     alt="logMitra Logo"
                     className="w-full h-full object-contain"
                   />

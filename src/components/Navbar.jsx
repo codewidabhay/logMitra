@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Download, Smartphone, Sparkles } from 'lucide-react';
 import { APK_CONFIG, downloadApkFile } from '../config/download';
+import logmitraLogo from '../assets/logmitra-logo.png';
 
 export default function Navbar({ onDownloadClick }) {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,7 @@ export default function Navbar({ onDownloadClick }) {
             <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#695de3] via-[#7a6df1] to-[#fa6008] p-[1.5px] shadow-sm group-hover:scale-105 transition-transform">
               <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center p-1.5">
                 <img
-                  src="/logmitra-logo.png"
+                  src={logmitraLogo}
                   alt="logMitra Logo"
                   className="w-full h-full object-contain"
                 />
