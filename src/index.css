@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", "DM Sans", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#f7f5ff] text-slate-900 antialiased font-sans text-[15px] sm:text-base;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Plus Jakarta Sans", "Outfit", sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Light & Colorful Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f5ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4b5fd;
+  border-radius: 9999px;
+  border: 2px solid #f7f5ff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #695de3;
+}
+
+/* Soft Floating Animations */
+@keyframes phoneFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-0.5deg);
+  }
+}
+
+@keyframes widgetFloatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes widgetFloatFast {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+@keyframes shadowPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(0.92);
+    opacity: 0.2;
+  }
+}
+
+.animate-phone-float {
+  animation: phoneFloat 6s ease-in-out infinite;
+}
+
+.animate-widget-slow {
+  animation: widgetFloatSlow 5s ease-in-out infinite;
+}
+
+.animate-widget-fast {
+  animation: widgetFloatFast 4.5s ease-in-out infinite;
+}
+
+.animate-shadow-pulse {
+  animation: shadowPulse 6s ease-in-out infinite;
+}
+
+/* Glass Card & Pill Utilities */
+.ref-pill {
+  border-radius: 9999px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
