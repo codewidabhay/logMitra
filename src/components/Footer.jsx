@@ -104,11 +104,10 @@ export default function Footer({ onDownloadClick }) {
         {/* Bottom Row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            © 2026 <strong className="text-slate-800">log<span className="text-[#fa6008]">Mitra</span></strong>. Developed by <strong className="text-slate-800">MRK Engineering </strong>&<strong className="text-slate-800"> Services </strong>.
+            © 2026 <strong className="text-slate-800">log<span className="text-[#fa6008]">Mitra</span></strong>. Developed by <strong className="text-slate-800">MRK GROUP</strong>.
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="text-[11px] text-slate-400">Confidential — Internal Enterprise Use Only</span>
             <button
               onClick={scrollToTop}
               className="p-2 rounded-full bg-slate-100 hover:bg-iris-50 text-slate-600 hover:text-iris-600 transition-colors cursor-pointer"
