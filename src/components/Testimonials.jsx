@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star, Quote, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
-export default function TestimonialsSection() {
+export default function Testimonials() {
   return (
     <section className="py-20 lg:py-28 bg-white relative overflow-hidden">
       

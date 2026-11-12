@@ -14,7 +14,7 @@ import {
   TrendingUp
 } from 'lucide-react';
 
-export default function ComparisonSection() {
+export default function Comparison() {
   const [activeTab, setActiveTab] = useState('split'); // 'split', 'replaced', 'logmitra'
 
   const oldWays = [

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, Mail, KeyRound, ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
 
-export default function OtpSimulatorModal({ isOpen, onClose }) {
+export default function OtpModal({ isOpen, onClose }) {
   const [email, setEmail] = useState('employee@bimqp.com');
   const [step, setStep] = useState(1); // 1: enter email, 2: enter code, 3: logged in
   const [code, setCode] = useState(['', '', '', '', '', '']);

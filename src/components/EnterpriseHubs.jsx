@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Mail, Smartphone, CheckCircle2, Send, Download, Building2, MapPin, ArrowRight } from 'lucide-react';
-import { APK_CONFIG, downloadApkFile } from '../config/download';
+import { APK_CONFIG } from '../config/apkConfig';
+import { downloadApkFile } from '../utils/helpers';
 
-export default function ContactSection({ onDownloadClick }) {
+export default function EnterpriseHubs({ onDownloadClick }) {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 

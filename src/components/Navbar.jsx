@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Download, Smartphone, Sparkles } from 'lucide-react';
-import { APK_CONFIG, downloadApkFile } from '../config/download';
+import { APK_CONFIG } from '../config/apkConfig';
+import { downloadApkFile } from '../utils/helpers';
 import logmitraLogo from '../assets/logmitra-logo.png';
 
 export default function Navbar({ onDownloadClick }) {

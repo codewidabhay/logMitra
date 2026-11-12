@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, BookOpen, Clock, Sparkles } from 'lucide-react';
 
-export default function GuidesSection() {
+export default function Guides() {
   const guides = [
     {
       pillLabel: 'GPS Geofencing',

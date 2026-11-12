@@ -5,7 +5,8 @@ import {
   Play, Pause, CheckCircle2, ShieldCheck, Users, 
   Sparkles, Calendar, Layers
 } from 'lucide-react';
-import { APK_CONFIG, downloadApkFile } from '../config/download';
+import { APK_CONFIG } from '../config/apkConfig';
+import { downloadApkFile } from '../utils/helpers';
 
 // Official App Store SVGs
 function GooglePlayIcon({ className = "w-5 h-5" }) {

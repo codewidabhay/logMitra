@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import PillarsSection from './components/PillarsSection';
-import OverviewSection from './components/OverviewSection';
-import CoreFeatures from './components/CoreFeatures';
+import Pillars from './components/Pillars';
+import Overview from './components/Overview';
+import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
-import PricingSection from './components/PricingSection';
-import ContactSection from './components/ContactSection';
-import TestimonialsSection from './components/TestimonialsSection';
-import GuidesSection from './components/GuidesSection';
+import Pricing from './components/Pricing';
+import EnterpriseHubs from './components/EnterpriseHubs';
+import Testimonials from './components/Testimonials';
+import Guides from './components/Guides';
 import Footer from './components/Footer';
 import DownloadModal from './components/DownloadModal';
 import SectionDivider from './components/SectionDivider';
@@ -31,19 +31,19 @@ export default function App() {
         <SectionDivider bg="bg-[#f7f5ff]" />
 
         {/* 2. Key Operational Pillars (Split-Color Curved Purple Block) */}
-        <PillarsSection />
+        <Pillars />
 
         {/* Divider 2 */}
         <SectionDivider bg="bg-[#f7f5ff]" />
 
         {/* 3. Product / Service Overview (Floating Tasks Stack & Key Statistics) */}
-        <OverviewSection />
+        <Overview />
 
         {/* Divider 3 */}
         <SectionDivider bg="bg-white" />
 
         {/* 4. Comprehensive Feature Set (Tab Pills & 2x2 Feature Cards) */}
-        <CoreFeatures />
+        <Features />
 
         {/* Divider 4 */}
         <SectionDivider bg="bg-[#faf9fe]" />
@@ -55,25 +55,25 @@ export default function App() {
         <SectionDivider bg="bg-white" />
 
         {/* 6. Pricing Section (Interactive Employee Slider & Bundle Cards) */}
-        <PricingSection onDownloadClick={() => setIsDownloadOpen(true)} />
+        <Pricing onDownloadClick={() => setIsDownloadOpen(true)} />
 
         {/* Divider 6 */}
         <SectionDivider bg="bg-[#fdfcff]" />
 
         {/* 7. Enterprise Deployment Banner & Active Hubs (Jaipur, Johor Bahru, Singapore) */}
-        <ContactSection onDownloadClick={() => setIsDownloadOpen(true)} />
+        <EnterpriseHubs onDownloadClick={() => setIsDownloadOpen(true)} />
 
         {/* Divider 7 */}
         <SectionDivider bg="bg-[#f7f5ff]" />
 
         {/* 8. Testimonials & Social Proof */}
-        <TestimonialsSection />
+        <Testimonials />
 
         {/* Divider 8 */}
         <SectionDivider bg="bg-white" />
 
         {/* 9. Operational Guides / Resources */}
-        <GuidesSection />
+        <Guides />
       </main>
 
       {/* Divider 9 */}

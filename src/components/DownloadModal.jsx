@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Download, Smartphone, CheckCircle2, ShieldCheck, ArrowRight } from 'lucide-react';
-import { APK_CONFIG, downloadApkFile } from '../config/download';
+import { APK_CONFIG } from '../config/apkConfig';
+import { downloadApkFile } from '../utils/helpers';
 
 export default function DownloadModal({ isOpen, onClose }) {
   const [downloaded, setDownloaded] = useState(false);

@@ -10,7 +10,7 @@ import featureGeofencingImg from '../assets/feature-gps-geofencing.jpg';
 import featureTasksImg from '../assets/feature-task-management.jpg';
 import featureInsightsImg from '../assets/feature-workforce-insights.jpg';
 
-export default function CoreFeatures() {
+export default function Features() {
   const [activeTab, setActiveTab] = useState(0);
 
   const features = [

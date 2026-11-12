@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, CheckSquare, BarChart3 } from 'lucide-react';
 
-export default function PillarsSection() {
+export default function Pillars() {
   return (
     <section id="pillars" className="py-12 sm:py-16 bg-[#f7f5ff] relative overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

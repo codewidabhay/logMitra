@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle2, Sparkles, ArrowRight, ShieldCheck, Users, Zap, HelpCircle } from 'lucide-react';
 
-export default function PricingSection({ onDownloadClick }) {
+export default function Pricing({ onDownloadClick }) {
   const [employees, setEmployees] = useState(50);
   const [billingCycle, setBillingCycle] = useState('monthly'); // 'monthly' | 'annual'
 

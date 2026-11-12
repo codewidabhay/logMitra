@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import officeArrivalImg from '../assets/office-arrival-attendance.jpg';
 
-export default function OverviewSection() {
+export default function Overview() {
   const stats = [
     {
       value: '9h',
